@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: First Step
-     - run: |
+       run: |
          echo "Hello, World! This is the first step of the demo."
          echo "This is a commit message: ${{ github.event.head_commit.message }}"
          echo "This is the SHA of the commit: ${{ github.sha }}"
