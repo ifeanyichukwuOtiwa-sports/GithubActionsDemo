@@ -1,4 +1,4 @@
-name: Demo by ${{ gihub.actor }}
+name: Demo by ${{ github.actor }}
 run-name: ${{ gihub.actor }} is testing Github Actions Demo
 
 
