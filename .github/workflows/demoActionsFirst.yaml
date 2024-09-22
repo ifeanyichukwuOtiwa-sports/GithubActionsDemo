@@ -15,11 +15,12 @@ jobs:
     name: First Job ${{ github.job }}
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: First Step ${{ job.name }}
-      - run: |
-          echo "Hello, World! This is the first step of the demo."
-          echo "This is a commit message: ${{ github.event.head_commit.message }}"
-          echo "This is the SHA of the commit: ${{ github.sha }}"
-          echo "This is the author of the commit: ${{ github.actor }}"
-          echo "This is the repository: ${{ github.repository }}"
-          echo "This is the branch: ${{ github.ref }}"
+        run: |
+            echo "Hello, World! This is the first step of the demo."
+            echo "This is a commit message: ${{ github.event.head_commit.message }}"
+            echo "This is the SHA of the commit: ${{ github.sha }}"
+            echo "This is the author of the commit: ${{ github.actor }}"
+            echo "This is the repository: ${{ github.repository }}"
+            echo "This is the branch: ${{ github.ref }}"
