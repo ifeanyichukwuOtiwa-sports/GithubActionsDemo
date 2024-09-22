@@ -1,4 +1,4 @@
-name: Demo by ${{ github.actor }}
+name: Demo by Me
 run-name: ${{ github.actor }} is testing Github Actions Demo
 
 
@@ -16,7 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: First Step ${{ job.name }}
-        uses: actions/checkout@v4
       - run: |
           echo "Hello, World! This is the first step of the demo."
           echo "This is a commit message: ${{ github.event.head_commit.message }}"
